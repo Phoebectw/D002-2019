@@ -7,14 +7,23 @@ print('''Welcome to the Banana Guessing Game
 Dave hid some bananas. Your task is to find out the number of bananas he hid.''')
 #Step 3: Choose a random number between 1-100
 n = random.randint(1,100)
-print ("shhh, Dave hides %s bananas" % n)
+
 # define a flag for found/not found and counter on how many trials
 found = False
 count = 0
-#Step 4: Give three chances to the players 
-
-
-
+#Step 4: Give three chances to the players
+while count < 3:
+    print ("you now have %d chances" %(3-count))
+    guess=int(input("please input your first guess"))
+    count=count+1
+    if guess==n:
+        found=True
+        break
+    else:
+        if guess<n:
+            print("your guess is too low")
+        if guess>n:
+            print("your guess is too high")
 #Step 5: Display a message
 if found == True:
         print('You got the correct guess in %d trials' % count)
