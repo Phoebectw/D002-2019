@@ -24,7 +24,13 @@ print(collection) # should print ['Pikachu', 'Bulbasaur', 'Squirtle', 'Nidoqueen
 # Put those changes into another list.
 
 hsi = [20000, 21000, 21500, 22125, 21015, 22013, 19942, 24500]
-change = [hsi[1]-hsi[0],hsi[2]-hsi[1],hsi[3]-hsi[2],hsi[4]-hsi[3],hsi[5]-hsi[4],hsi[6]-hsi[5],hsi[7]-hsi[6]]
+while True:
+    x=hsi[i+1]-hsi[i-1]
+    change.append(x)
+    i=i+1
+    if i==7:
+        break
+    
 
 # your code here
 
