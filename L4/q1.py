@@ -22,7 +22,7 @@ print(collection) # should print ['Pikachu', 'Bulbasaur', 'Squirtle', 'Nidoqueen
 # of a period of time. Each number represents the HSI recorded at the end of a
 # day. You want to find how many points it goes up and down in each day.
 # Put those changes into another list.
-
+i=0
 hsi = [20000, 21000, 21500, 22125, 21015, 22013, 19942, 24500]
 while True:
     x=hsi[i+1]-hsi[i-1]
