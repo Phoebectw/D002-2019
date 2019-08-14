@@ -50,10 +50,10 @@ while True:
     print("You are now watching %s" % channels[current_channel])
     a = input("Please choose either Up/Down/Off\n")
     if a == 'U'or a=='u':
-        (current_channel) =(current_channel)+1
+        (current_channel) =(current_channel+1)%7
         continue
     if a == 'D' or a=='d':
-        (current_channel) = (current_channel)-1
+        (current_channel) = (current_channel-1)%7
         continue
     if a == 'O' or a=='o':
         break
